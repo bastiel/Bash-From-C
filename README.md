@@ -1,2 +1,4 @@
 # Bash-From-C
-Enables bash command line using C language and libraries from APUE 3E
+Enables a simplified bash command line using C language and libraries from APUE 3E
+
+Execute the shell with `./myShell2`
