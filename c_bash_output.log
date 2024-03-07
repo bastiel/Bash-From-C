@@ -1,0 +1,62 @@
+Script started on Tue 05 Mar 2024 01:41:27 AM MST
+[?1034hbash-4.2$ clear
+[3;J[H[2Jbash-4.2$ ./c[KmyShell2 
+% ls
+cmd_str[0]: ls
+
+c_bash_output.log  myShell2    myShell2.c2222	myShell2.c.BKUP2
+Makefile	   myShell2.c  myShell2.c.BKUP	shell2.c
+% ls -lrt
+cmd_str[0]: ls
+cmd_str[1]: -lrt
+
+total 40
+-rw-r--r-- 1 vungh vungh   826 Feb 22 10:58 shell2.c
+-rw-rw-r-- 1 vungh vungh   863 Mar  1 16:14 myShell2.c.BKUP
+-rw-r--r-- 1 vungh vungh   286 Mar  1 18:25 Makefile
+-rw-rw-r-- 1 vungh vungh   883 Mar  3 20:49 myShell2.c.BKUP2
+-rw-rw-r-- 1 vungh vungh  1812 Mar  4 21:57 myShell2.c2222
+-rw-rw-r-- 1 vungh vungh  1862 Mar  4 22:57 myShell2.c
+-rwxrwxr-x 1 vungh vungh 14120 Mar  4 22:57 myShell2
+-rw-rw-r-- 1 vungh vungh     0 Mar  4 23:06 c_bash_output.log
+% ls -l myShell2.c myShell2
+cmd_str[0]: ls
+cmd_str[1]: -l
+cmd_str[2]: myShell2.c
+cmd_str[3]: myShell2
+
+-rwxrwxr-x 1 vungh vungh 14120 Mar  4 22:57 myShell2
+-rw-rw-r-- 1 vungh vungh  1862 Mar  4 22:57 myShell2.c
+% ls -lrt > aaa
+cmd_str[0]: ls
+cmd_str[1]: -lrt
+cmd_str[2]: >
+cmd_str[3]: aaa
+
+ls: cannot access >: No such file or directory
+ls: cannot access aaa: No such file or directory
+% find . -name she* -type f
+cmd_str[0]: find
+cmd_str[1]: .
+cmd_str[2]: -name
+cmd_str[3]: she*
+cmd_str[4]: -type
+cmd_str[5]: f
+
+./shell2.c
+% ps -ue
+cmd_str[0]: ps
+cmd_str[1]: -ue
+
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+vungh    14516  0.0  0.0 120784  3236 pts/4    Ss   00:15   0:00 -bash LANG=en_US.UTF-8 USER=vungh LOGN
+vungh    14734  0.0  0.0 128892  4124 pts/4    S+   00:19   0:01 /tmp/.mount_nvimysHIVR/usr/bin/nvim st
+vungh    18495  0.0  0.0 122768  4992 pts/5    Ss   00:58   0:00 /bin/bash XDG_SESSION_ID=10385 HOSTNAM
+vungh    21697  0.0  0.0 120868  1036 pts/5    S+   01:41   0:00 script c_bash_output.log NVM_INC=/expo
+vungh    21699  0.0  0.0 120876   428 pts/5    S+   01:41   0:00 script c_bash_output.log NVM_INC=/expo
+vungh    21700  0.0  0.0 122768  4956 pts/2    Ss   01:41   0:00 bash -i NVM_INC=/export/homes/vungh/.n
+vungh    22069  0.0  0.0   4388   576 pts/2    S+   01:41   0:00 ./myShell2 NVM_INC=/export/homes/vungh
+vungh    22119  0.0  0.0 170168  2116 pts/2    R+   01:42   0:00 ps -ue NVM_INC=/export/homes/vungh/.nv
+% bash-4.2$ exit
+
+Script done on Tue 05 Mar 2024 01:42:50 AM MST
